@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Vellar — Territory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header class="topbar">
+        <div>
+            <div class="logo">VELLAR</div>
+            <div class="subtitle">DIGITAL REPUBLIC</div>
+        </div>
+
+        <div class="balance">
+            <span>VEL</span>
+            <strong id="balance">100</strong>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="profile">
+            <div class="avatar">V</div>
+
+            <div>
+                <div class="citizen-name" id="citizenName">
+                    Founder
+                </div>
+
+                <div class="status">
+                    Citizen #0001
+                </div>
+            </div>
+
+            <div class="level">
+                <small>LEVEL</small>
+                <strong id="level">1</strong>
+            </div>
+        </section>
+
+
+        <section class="stats">
+
+            <div class="stat">
+                <span>Territory</span>
+                <strong id="territory">1</strong>
+            </div>
+
+            <div class="stat">
+                <span>Buildings</span>
+                <strong id="buildings">0</strong>
+            </div>
+
+            <div class="stat">
+                <span>Income</span>
+                <strong id="income">0</strong>
+                <small>VEL / min</small>
+            </div>
+
+        </section>
+
+
+        <section class="territory-section">
+
+            <div class="section-title">
+                <div>
+                    <h2>Your Territory</h2>
+                    <p>Expand the Republic</p>
+                </div>
+
+                <div class="land-count">
+                    <span id="landCount">1</span>/25
+                </div>
+            </div>
+
+
+            <div id="map" class="map"></div>
+
+        </section>
+
+
+        <section class="actions">
+
+            <button id="buyButton" class="primary-button">
+                BUY LAND — 20 VEL
+            </button>
+
+            <button id="buildButton" class="secondary-button">
+                BUILD — 50 VEL
+            </button>
+
+            <button id="collectButton" class="income-button">
+                COLLECT INCOME
+            </button>
+
+        </section>
+
+
+        <section class="activity">
+
+            <div class="activity-title">
+                Activity
+            </div>
+
+            <div id="activityLog">
+                <div class="activity-item">
+                    <span>🏴</span>
+                    <div>
+                        <strong>Republic founded</strong>
+                        <small>Your territory has been established.</small>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        VELLAR DIGITAL REPUBLIC
+        <span>•</span>
+        TERRITORY SYSTEM v0.1
+    </footer>
+
+</div>
+
+<script src="game.js"></script>
+
+</body>
+</html>
